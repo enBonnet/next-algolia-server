@@ -9,7 +9,7 @@ export default {
     format: "es",
     externalLiveBindings: false,
   },
-  external: [],
+  external: ["algoliasearch"],
   plugins: [
     typescript({
       check: true,

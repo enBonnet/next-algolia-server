@@ -1,15 +1,17 @@
 {
   "name": "next-algolia-server",
   "version": "0.0.0",
+  "license": "MIT",
   "files": [
     "dist"
   ],
-  "main": "./dist/next-algolia-server.umd.js",
-  "module": "./dist/next-algolia-server.es.js",
+  "main": "./dist/next-algolia-server.dts.js",
+  "module": "./dist/next-algolia-server.dts.js",
+  "types": "./dist/main.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/next-algolia-server.es.js",
-      "require": "./dist/next-algolia-server.umd.js"
+      "import": "./dist/next-algolia-server.dts.js",
+      "require": "./dist/next-algolia-server.dts.js"
     }
   },
   "scripts": {
