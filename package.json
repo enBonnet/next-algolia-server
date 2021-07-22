@@ -14,14 +14,16 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "node build.js",
     "serve": "vite preview"
   },
   "devDependencies": {
+    "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.3.2",
     "vite": "^2.4.3"
   },
   "dependencies": {
-    "algoliasearch": "^4.10.3"
+    "algoliasearch": "^4.10.3",
+    "execa": "^5.1.1"
   }
 }

@@ -1,10 +1,10 @@
-const path = require("path");
+import path from "path";
 
-module.exports = {
+export default {
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/main.ts"),
-      name: "next-algolia-server",
+      name: "main",
     },
     rollupOptions: {
       external: [],
