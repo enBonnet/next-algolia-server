@@ -3,8 +3,12 @@ import algoliasearch, {
   AlgoliaSearchOptions,
 } from "algoliasearch";
 import { SaveObjectsOptions } from "@algolia/client-search";
-import { AlgoliaServerConfig } from "./types";
 
+interface AlgoliaServerConfig {
+  algoliaId: string;
+  algoliaKey: string;
+  options?: AlgoliaSearchOptions;
+}
 export default class AlgoliaServer {
   protected static instance: AlgoliaServer | null = null;
   private algoliaId: string = "";
