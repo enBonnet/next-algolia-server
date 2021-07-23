@@ -11,15 +11,18 @@
   "module": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
-    "build": "yarn clean:lib && yarn build:esm && yarn build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
-    "clean:lib": "rm -rf lib/*"
+    "build": "rollup -c",
+    "watch": "rollup -cw"
   },
   "devDependencies": {
+    "rollup": "^2.53.3",
+    "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.3.2"
   },
   "peerDependencies": {
+    "algoliasearch": "^4.10.3"
+  },
+  "dependencies": {
     "algoliasearch": "^4.10.3"
   }
 }
