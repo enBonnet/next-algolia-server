@@ -4,17 +4,16 @@
   "license": "MIT",
   "repository": "git@github.com:enBonnet/next-algolia-server.git",
   "author": "Ender Bonnet <@enBonnet>",
-  "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/next-algolia-server.dts.js",
-  "module": "./dist/next-algolia-server.dts.js",
+  "main": "./dist/next-algolia-server.umd.js",
+  "module": "./dist/next-algolia-server.es.js",
   "types": "./dist/main.d.ts",
   "exports": {
     ".": {
       "import": "./dist/next-algolia-server.dts.js",
-      "require": "./dist/next-algolia-server.dts.js"
+      "require": "./dist/next-algolia-server.umd.js"
     }
   },
   "scripts": {
