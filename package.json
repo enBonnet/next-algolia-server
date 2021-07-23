@@ -8,7 +8,7 @@
     "dist"
   ],
   "main": "./dist/next-algolia-server.umd.js",
-  "module": "./dist/next-algolia-server.es.js",
+  "module": "./dist/next-algolia-server.dts.js",
   "types": "./dist/main.d.ts",
   "exports": {
     ".": {
