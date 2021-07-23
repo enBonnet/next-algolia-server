@@ -16,7 +16,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "node build.js",
+    "build": "tsc && node build.js",
+    "build:watch": "tsc --watch",
     "serve": "vite preview"
   },
   "devDependencies": {
