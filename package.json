@@ -2,6 +2,7 @@
   "name": "next-algolia-server",
   "version": "0.2.3",
   "license": "MIT",
+  "description": "Handle Algolia api with NextJS",
   "repository": "git@github.com:enBonnet/next-algolia-server.git",
   "author": "Ender Bonnet <@enBonnet>",
   "files": [
