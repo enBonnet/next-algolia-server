@@ -37,6 +37,9 @@ export async function getStaticProps() {
   // ... functions to get my posts...
   const posts = [];
   // Read more about this https://www.algolia.com/doc/api-reference/api-methods/save-objects/
+  // Every record most have a unique `objectID` param
+  // Or let algolia generate it with algoliaServer.saveRecords(posts, { autoGenerateObjectIDIfNotExist: true })
+  // Be careful if you let algolia generate it you could duplicate your records
   algoliaServer.saveRecords(posts);
 
   return posts;
