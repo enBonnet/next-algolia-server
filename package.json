@@ -1,6 +1,6 @@
 {
   "name": "next-algolia-server",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "license": "MIT",
   "description": "Handle Algolia api with NextJS",
   "repository": "git@github.com:enBonnet/next-algolia-server.git",
